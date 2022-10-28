@@ -25,5 +25,13 @@ public class Personal extends BasePage {
 		return driver.getTitle();
 	}
 	
+	public void clickOnMenu()
+	{
+		menu.click();
+	}
+	public void clickOnBusiness()
+	{
+		business.click();
+	}
 
 }
