@@ -11,25 +11,25 @@ public class Personal extends BasePage {
 
 	@FindBy(xpath="//label[@class='menu-bar']")
 	WebElement menu;
-	
+
 	@FindBy(xpath="//a[@aria-label='Business']")
 	WebElement business;
-	
+
 	public Personal(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public String getWebPageTitle()
 	{
 		return driver.getTitle();
 	}
-	
-	public void clickOnMenu()
+
+	public  void clickOnMenu()
 	{
 		menu.click();
 	}
-	public void clickOnBusiness()
+	public  void clickOnBusiness()
 	{
 		business.click();
 	}

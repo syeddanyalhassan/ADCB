@@ -17,43 +17,43 @@ public class BasePage {
 
 	public static WebDriver driver;
 	static Properties prop;
-	
+
 	public BasePage(){
 		// TODO Auto-generated constructor stub
-	try 
-	{
-		prop=new Properties();
-		FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\adcb\\qa\\config\\config.properties");
-		prop.load(ip);
-	}
-	catch(FileNotFoundException ex)
-	{
-		ex.printStackTrace();
-	}
-	catch(IOException ex)
-	{
-		ex.printStackTrace();
+		try 
+		{
+			prop=new Properties();
+			FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\adcb\\qa\\config\\config.properties");
+			prop.load(ip);
+		}
+		catch(FileNotFoundException ex)
+		{
+			ex.printStackTrace();
+		}
+		catch(IOException ex)
+		{
+			ex.printStackTrace();
+		}
+
+
 	}
 
-	
-	}
-	
 	public static void Initialization()
 	{
 		String browsername=prop.getProperty("browser");
 		if (browsername.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\driver\\chromedriver_win32\\chromedriver.exe");
-		    driver=new ChromeDriver();
+			driver=new ChromeDriver();
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(prop.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.DEFAULT_TIMEOUT));
-		
+
 	}
-	
-	
+
+
 
 }
