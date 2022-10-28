@@ -80,6 +80,40 @@ public class Personaltest extends BasePage {
 		ofSeconds(Constants.DEFAULT_TIMEOUT));
 		
 		
+		ppage.clickonSearch();
+		
+		report.addLog(LogStatus.INFO, "Search icon tapped");
+		report.addLog(LogStatus.PASS, "Search tray opened successfully");
+		
+		driver
+		.manage()
+		.timeouts()
+		.implicitlyWait(Duration.ofSeconds(Constants.DEFAULT_TIMEOUT));
+		
+		
+		ppage.searchText();
+		
+		report.addLog(LogStatus.INFO, "Search icon selected");
+		report.addLog(LogStatus.INFO, "Search icon text supplied successfully");
+		
+		driver.
+		manage().
+		timeouts().
+		implicitlyWait(Duration.ofSeconds(Constants.DEFAULT_TIMEOUT));
+		
+		String textVerify=ppage.searchCount();
+		
+		Assert.assertEquals(textVerify, "2 RESULTS");
+		
+		report.addLog(LogStatus.INFO, "Search count checking..");
+		report.addLog(LogStatus.INFO, "Search count checked successfully..");
+		
+		driver.
+		manage().
+		timeouts()
+		.implicitlyWait(Duration.ofSeconds(Constants.DEFAULT_TIMEOUT));
+		
+		
 		report.compilereport();
 		
 		
