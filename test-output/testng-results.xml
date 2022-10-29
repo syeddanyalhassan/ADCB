@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-28T22:39:00 GST" name="Default suite" finished-at="2022-10-28T22:39:45 GST" duration-ms="44752">
+  <suite started-at="2022-10-29T10:02:01 GST" name="Default suite" finished-at="2022-10-29T10:02:52 GST" duration-ms="51331">
     <groups>
     </groups>
-    <test started-at="2022-10-28T22:39:00 GST" name="Default test" finished-at="2022-10-28T22:39:45 GST" duration-ms="44752">
+    <test started-at="2022-10-29T10:02:01 GST" name="Default test" finished-at="2022-10-29T10:02:52 GST" duration-ms="51331">
       <class name="Personaltest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Personaltest@41330d4f]" started-at="2022-10-28T22:39:00 GST" name="setUp" finished-at="2022-10-28T22:39:21 GST" duration-ms="21328" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Personaltest@41330d4f]" started-at="2022-10-29T10:02:01 GST" name="setUp" finished-at="2022-10-29T10:02:31 GST" duration-ms="29904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="oneActivity()[pri:0, instance:Personaltest@41330d4f]" started-at="2022-10-28T22:39:21 GST" name="oneActivity" finished-at="2022-10-28T22:39:44 GST" duration-ms="22910" status="PASS">
+        <test-method signature="oneActivity()[pri:0, instance:Personaltest@41330d4f]" started-at="2022-10-29T10:02:31 GST" name="oneActivity" finished-at="2022-10-29T10:02:52 GST" duration-ms="20778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneActivity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Personaltest@41330d4f]" started-at="2022-10-28T22:39:44 GST" name="tearDown" finished-at="2022-10-28T22:39:45 GST" duration-ms="445" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Personaltest@41330d4f]" started-at="2022-10-29T10:02:52 GST" name="tearDown" finished-at="2022-10-29T10:02:52 GST" duration-ms="586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
